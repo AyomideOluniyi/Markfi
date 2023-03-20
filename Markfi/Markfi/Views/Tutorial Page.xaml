@@ -5,14 +5,12 @@
     <ContentPage.Content>
         <!--using a grid so that the tutorial page formats properly-->
         <Grid>
-            
             <!--Setting up the format for the page-->
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <StackLayout Padding="20, 20, 20, 20" VerticalOptions="CenterAndExpand" HorizontalOptions="Fill">
-                
                 <!--Welcome to the tutorial message-->
                 <Label Text="Welcome to the tutorial!"
                     HorizontalTextAlignment="Center"
