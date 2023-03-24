@@ -8,11 +8,15 @@ namespace Markfi
 {
     public partial class App : Application
     {
+        public static object Database { get; internal set; }
+
+
+
 
         public App()
         {
             InitializeComponent();
-
+            MainPage = new NavigationPage(new MainMenuPage());
             DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
         }
